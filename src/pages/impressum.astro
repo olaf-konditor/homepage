@@ -1,0 +1,37 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<html lang="en">
+  <head>
+    <MainHead title="Impressum" />
+    <style>
+      .wrapper {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1>📄 Impressum</h1>
+      <p>Konditorei - Cafe - Bäckerei Hilleke</p>
+      <p>Inhaber: Olaf Hilleke Schildberg 62</p>
+      <p>45475 Mülheim an der Ruhr</p>
+      <p>📞 0208 72336</p>
+      <p>✉️ olaf.hilleke@arcor.de</p>
+      <p>Redaktionelle Verantwortung: Olaf Hilleke</p>
+      <p>Berufsrechtliche Regelung: Olaf Hilleke</p>
+      <p>Inhaber: Olaf Hilleke Konditormeister</p>
+      <p>Bundesrepublik Deutschland</p>
+      <p>Handwerkskammer Düsseldorf</p>
+      <p>Postfach 102755</p>
+      <p>40018 Düsseldorf</p>
+    </div>
+    <Footer />
+  </body>
+</html>
