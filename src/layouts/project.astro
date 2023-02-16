@@ -15,7 +15,7 @@ const { content } = Astro.props;
   <head>
     <MainHead title={content.title} description={content.description} />
     <style>
-      .hero {
+      .header {
         padding: 8rem;
         display: flex;
         background-color: var(--t-fg);
@@ -54,6 +54,15 @@ const { content } = Astro.props;
         letter-spacing: 0.0625em;
       }
 
+      @media (min-width: 350px) {
+        .title {
+          font-size: var(--f-u3);
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.0625em;
+        }
+      }
+
       .leadIn {
         padding-top: 4em;
         color: var(--t-bg);
@@ -87,7 +96,14 @@ const { content } = Astro.props;
   </head>
   <body>
     <Nav />
-    <header style={`background-image:url(${content.img})`} class="hero">
+    <header
+      style={`background-image:linear-gradient(
+    to bottom,
+    #05091e70,
+    #05091e
+  ),url(${content.img});`}
+      class="header"
+    >
       <h1 class="title">{content.title}</h1>
     </header>
     <div class="leadIn">

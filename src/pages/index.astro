@@ -82,6 +82,12 @@ const featuredProject = projects[0]!;
         }
       }
 
+      @media (min-width: 350px) {
+        .overlay {
+          width: auto;
+        }
+      }
+
       .title {
         font-weight: 900;
         font-size: var(--f-u6);
@@ -166,6 +172,15 @@ const featuredProject = projects[0]!;
         pointer-events: none;
         clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
         transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
+      }
+
+      @media (min-width: 350px) {
+        .sectionTitle {
+          font-weight: 700;
+          font-size: var(--f-u3);
+          margin-top: 4rem;
+          margin-bottom: 2rem;
+        }
       }
 
       .desc {
